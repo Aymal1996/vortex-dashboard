@@ -1,0 +1,303 @@
+.sign-in {
+  height: 100vh;
+  margin: auto 0;
+}
+
+.sign-in .container-fluid,
+.sign-in .row {
+  height: 100%;
+}
+
+.sign-in .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 250px;
+}
+
+.sign-in .form-content .input-group-prepend .input-group-text::after {
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: calc(100% - 8px);
+  /* Adjust the height as needed */
+  background-color: #000;
+  /* Adjust the color as needed */
+  margin: 3px 0 3px 10px;
+  /* Adjust the margin to center the line vertically */
+  height: 18px;
+}
+
+.sign-in .form-content input {
+  border-radius: 100px;
+}
+
+.sign-in .form-content input[type="text"],
+.sign-in .form-content input[type="password"] {
+  height: 60px;
+}
+
+.sign-in .form-content .input-group-text {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  height: 60px;
+  background-color: white !important;
+}
+
+.sign-in .form-content .form-control:focus {
+  border: 1px solid #000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sign-in .form-content p {
+  color: #000;
+}
+
+.sign-in .form-content i {
+  color: #0CCC52;
+  margin-top: -4px;
+}
+
+.sign-in .form-content .remember-forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign-in .form-content .remember-forgot .forgot a {
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.sign-in .form-content .logo {
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sign-in .form-content a.btn {
+  font-size: 19px;
+}
+
+.sign-in .form-content a.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sign-in .form-content .span1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.sign-in .form-content .span1 a {
+  color: #000;
+}
+
+.register,
+.forgot-pass,
+.verify-email,
+.create-new-pass {
+  height: 100vh;
+  margin: auto 0;
+}
+
+.register .container-fluid,
+.register .row,
+.forgot-pass .container-fluid,
+.forgot-pass .row,
+.verify-email .container-fluid,
+.verify-email .row,
+.create-new-pass .container-fluid,
+.create-new-pass .row {
+  height: 100%;
+}
+
+.register .form-content,
+.forgot-pass .form-content,
+.verify-email .form-content,
+.create-new-pass .form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 250px;
+}
+
+.register .form-content .input-group-prepend .input-group-text::after,
+.forgot-pass .form-content .input-group-prepend .input-group-text::after,
+.verify-email .form-content .input-group-prepend .input-group-text::after,
+.create-new-pass .form-content .input-group-prepend .input-group-text::after {
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: calc(100% - 8px);
+  /* Adjust the height as needed */
+  background-color: #000;
+  /* Adjust the color as needed */
+  margin: 3px 0 3px 10px;
+  /* Adjust the margin to center the line vertically */
+  height: 18px;
+}
+
+.register .form-content input,
+.forgot-pass .form-content input,
+.verify-email .form-content input,
+.create-new-pass .form-content input {
+  border-radius: 100px;
+}
+
+.register .form-content input[type="text"],
+.register .form-content input[type="password"],
+.register .form-content input[type="email"],
+.register .form-content input[type="tel"],
+.forgot-pass .form-content input[type="text"],
+.forgot-pass .form-content input[type="password"],
+.forgot-pass .form-content input[type="email"],
+.forgot-pass .form-content input[type="tel"],
+.verify-email .form-content input[type="text"],
+.verify-email .form-content input[type="password"],
+.verify-email .form-content input[type="email"],
+.verify-email .form-content input[type="tel"],
+.create-new-pass .form-content input[type="text"],
+.create-new-pass .form-content input[type="password"],
+.create-new-pass .form-content input[type="email"],
+.create-new-pass .form-content input[type="tel"] {
+  height: 60px;
+}
+
+.register .form-content .input-group-text,
+.forgot-pass .form-content .input-group-text,
+.verify-email .form-content .input-group-text,
+.create-new-pass .form-content .input-group-text {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  height: 60px;
+  background-color: white !important;
+}
+
+.register .form-content .form-control:focus,
+.forgot-pass .form-content .form-control:focus,
+.verify-email .form-content .form-control:focus,
+.create-new-pass .form-content .form-control:focus {
+  border: 1px solid #000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.register .form-content p,
+.forgot-pass .form-content p,
+.verify-email .form-content p,
+.create-new-pass .form-content p {
+  color: #000;
+}
+
+.register .form-content i,
+.forgot-pass .form-content i,
+.verify-email .form-content i,
+.create-new-pass .form-content i {
+  color: #0CCC52;
+  margin-top: -4px;
+}
+
+.register .form-content .remember-forgot,
+.forgot-pass .form-content .remember-forgot,
+.verify-email .form-content .remember-forgot,
+.create-new-pass .form-content .remember-forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register .form-content .remember-forgot .forgot a,
+.forgot-pass .form-content .remember-forgot .forgot a,
+.verify-email .form-content .remember-forgot .forgot a,
+.create-new-pass .form-content .remember-forgot .forgot a {
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.register .form-content .logo,
+.forgot-pass .form-content .logo,
+.verify-email .form-content .logo,
+.create-new-pass .form-content .logo {
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.register .form-content a.btn,
+.forgot-pass .form-content a.btn,
+.verify-email .form-content a.btn,
+.create-new-pass .form-content a.btn {
+  font-size: 19px;
+}
+
+.register .form-content a.btn:focus,
+.forgot-pass .form-content a.btn:focus,
+.verify-email .form-content a.btn:focus,
+.create-new-pass .form-content a.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.register .form-content .span1,
+.forgot-pass .form-content .span1,
+.verify-email .form-content .span1,
+.create-new-pass .form-content .span1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.register .form-content .span1 a,
+.forgot-pass .form-content .span1 a,
+.verify-email .form-content .span1 a,
+.create-new-pass .form-content .span1 a {
+  color: #000;
+}
+
+.register .six-input,
+.forgot-pass .six-input,
+.verify-email .six-input,
+.create-new-pass .six-input {
+  margin-top: 30px;
+}
+
+.register .six-input .six-input-field,
+.forgot-pass .six-input .six-input-field,
+.verify-email .six-input .six-input-field,
+.create-new-pass .six-input .six-input-field {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 15px !important;
+  padding-left: 5px !important;
+  border: 1px solid #000000 !important;
+}
+/*# sourceMappingURL=style.css.map */

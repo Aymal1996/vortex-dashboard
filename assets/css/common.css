@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bold-weight {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.regular-weight {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.light-weight {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.extra-light-weight {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.medium-weight {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.semi-bold-weight {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background-color: #0CCC52;
+    color: #000000;
+    border-radius: 100px;
+}
+
+a.btn {
+    width: 100%;
+    height: 40px;
+    background-color: #0CCC52;
+    color: #000000;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    height: 60px;
+}
+
+.bg1 {
+    background: #F5F4F7;
+}
+
+.input-group-text {
+    background-color: transparent !important;
+    /* border-right: 0px solid #fff !important;
+    border-top: 0px solid #000;
+    border-bottom: 0px solid #000;
+    border-left: 0px solid #000; */
+    border: 1px solid #000;
+}
+
+.form-control {
+    border-left: 0px solid #fff !important;
+    border: 1px solid #000000;
+}
+
+.green {
+    color: #0CCC52;
+}
