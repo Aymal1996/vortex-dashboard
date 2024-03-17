@@ -116,8 +116,28 @@
         input[type="text"],
         input[type="password"],
         input[type="email"],
-        input[type="tel"] {
+        input[type="tel"],
+        select {
             height: 60px;
+        }
+        select {
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            /* Remove default appearance */
+            -webkit-appearance: none;
+            /* Safari and Chrome */
+            -moz-appearance: none;
+            /* Firefox */
+            appearance: none;
+            /* Standard */
+            /* Add custom styles */
+            padding-right: 25px;
+            /* Space for custom arrow */
+            background-image: url('../img/dropdown.png');
+            /* Replace 'path/to/arrow-icon.png' with your arrow icon */
+            background-repeat: no-repeat;
+            background-position: 95%;
+            /* Position the arrow on the right side */
         }
         .input-group-text {
             border-top-left-radius: 100px;

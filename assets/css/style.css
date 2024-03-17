@@ -171,19 +171,46 @@
 .register .form-content input[type="password"],
 .register .form-content input[type="email"],
 .register .form-content input[type="tel"],
+.register .form-content select,
 .forgot-pass .form-content input[type="text"],
 .forgot-pass .form-content input[type="password"],
 .forgot-pass .form-content input[type="email"],
 .forgot-pass .form-content input[type="tel"],
+.forgot-pass .form-content select,
 .verify-email .form-content input[type="text"],
 .verify-email .form-content input[type="password"],
 .verify-email .form-content input[type="email"],
 .verify-email .form-content input[type="tel"],
+.verify-email .form-content select,
 .create-new-pass .form-content input[type="text"],
 .create-new-pass .form-content input[type="password"],
 .create-new-pass .form-content input[type="email"],
-.create-new-pass .form-content input[type="tel"] {
+.create-new-pass .form-content input[type="tel"],
+.create-new-pass .form-content select {
   height: 60px;
+}
+
+.register .form-content select,
+.forgot-pass .form-content select,
+.verify-email .form-content select,
+.create-new-pass .form-content select {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  /* Remove default appearance */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  appearance: none;
+  /* Standard */
+  /* Add custom styles */
+  padding-right: 25px;
+  /* Space for custom arrow */
+  background-image: url("../img/dropdown.png");
+  /* Replace 'path/to/arrow-icon.png' with your arrow icon */
+  background-repeat: no-repeat;
+  background-position: 95%;
+  /* Position the arrow on the right side */
 }
 
 .register .form-content .input-group-text,
