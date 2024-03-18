@@ -205,6 +205,12 @@
     display: flex;
     width: 100%;
     position: relative;
+    #v-pills-tabContent {
+        background-color: #F5F4F7;
+        height: auto;
+        padding: 40px 20px 10px;
+        border-radius: 10px;
+    }
     .left-side {
         position: absolute;
         top: 0;
@@ -361,6 +367,7 @@
             align-items: center;
             height: 100%;
             text-align: center;
+            padding-top: 150px;
             img {
                 width: 25%;
             }

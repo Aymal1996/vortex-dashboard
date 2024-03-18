@@ -336,6 +336,13 @@
   position: relative;
 }
 
+.dashboard-structure #v-pills-tabContent {
+  background-color: #F5F4F7;
+  height: auto;
+  padding: 40px 20px 10px;
+  border-radius: 10px;
+}
+
 .dashboard-structure .left-side {
   position: absolute;
   top: 0;
@@ -560,6 +567,7 @@
           align-items: center;
   height: 100%;
   text-align: center;
+  padding-top: 150px;
 }
 
 .dashboard-structure #v-pills-account #real img {
