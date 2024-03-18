@@ -4,7 +4,20 @@
     .verify-email .form-content,
     .create-new-pass .form-content,
     .sign-in .form-content {
-        padding: 0 100px;
+        padding: 0 25%;
+    }
+}
+
+@media only screen and (max-width: 1550.5px) {
+    .register .form-content,
+    .forgot-pass .form-content,
+    .verify-email .form-content,
+    .create-new-pass .form-content,
+    .sign-in .form-content {
+        padding: 0 20%;
+    }
+    .img img {
+        width: 60%;
     }
 }
 
@@ -14,13 +27,33 @@
     .verify-email .form-content,
     .create-new-pass .form-content,
     .sign-in .form-content {
-        padding: 0 50px;
+        padding: 0 20%;
+    }
+}
+
+@media only screen and (max-width: 1200.5px) {
+    .register .form-content,
+    .forgot-pass .form-content,
+    .verify-email .form-content,
+    .create-new-pass .form-content,
+    .sign-in .form-content {
+        padding: 0 15%;
+    }
+    .img img {
+        width: 70%;
     }
 }
 
 @media only screen and (max-width: 991.5px) {
+    .register .form-content,
+    .forgot-pass .form-content,
+    .verify-email .form-content,
+    .create-new-pass .form-content,
+    .sign-in .form-content {
+        padding: 0 10%;
+    }
     .img img {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -30,7 +63,7 @@
     .verify-email .form-content,
     .create-new-pass .form-content,
     .sign-in .form-content {
-        padding: 0 10px;
+        padding: 0 5%;
     }
 }
 
@@ -41,5 +74,32 @@
     .create-new-pass .form-content,
     .sign-in .form-content {
         height: auto;
+    }
+    .sign-in .form-content {
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+    .img img {
+        width: 70%;
+    }
+    .sign-in .form-content .span1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600.5px) {
+    .register .form-content,
+    .forgot-pass .form-content,
+    .verify-email .form-content,
+    .create-new-pass .form-content,
+    .sign-in .form-content {
+        height: auto;
+    }
+    .sign-in .form-content {
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+    .img img {
+        width: 80%;
     }
 }
