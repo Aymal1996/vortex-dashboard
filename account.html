@@ -59,8 +59,8 @@
                 </button>
                 </div>
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link medium-weight active" id="v-pills-dashboard-tab" data-toggle="pill" data-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="true"><img src="./assets/img/dashboard-icon.svg" alt="">Dashboard</button>
-                    <button class="nav-link medium-weight" id="v-pills-account-tab" data-toggle="pill" data-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-account" aria-selected="false"><img src="./assets/img/account.svg" alt="">My Account</button>
+                    <button class="nav-link medium-weight " id="v-pills-dashboard-tab" data-toggle="pill" data-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="true"><img src="./assets/img/dashboard-icon.svg" alt="">Dashboard</button>
+                    <button class="nav-link medium-weight active" id="v-pills-account-tab" data-toggle="pill" data-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-account" aria-selected="false"><img src="./assets/img/account.svg" alt="">My Account</button>
                     <button class="nav-link medium-weight" id="v-pills-performance-tab" data-toggle="pill" data-target="#v-pills-performance" type="button" role="tab" aria-controls="v-pills-performance" aria-selected="false"><img src="./assets/img/performance_11743778 1.svg" alt="">Performance</button>
                     <button class="nav-link medium-weight" id="v-pills-deposit-tab" data-toggle="pill" data-target="#v-pills-deposit" type="button" role="tab" aria-controls="v-pills-deposit" aria-selected="false"><img src="./assets/img/deposi.svg" alt="">Deposit</button>
                     <button class="nav-link medium-weight" id="v-pills-history-tab" data-toggle="pill" data-target="#v-pills-history" type="button" role="tab" aria-controls="v-pills-history" aria-selected="false"><img src="./assets/img/deposit-history.svg" alt=""> History</button>
@@ -75,13 +75,73 @@
                 </div>
             </div>
             <div class="right-side">
-                <div class="breadcrumb">
-                    Breadcrumb
-
+                <div class="breadcrumb bg1">
+                    <p><img src="./assets/img/danger.png" alt="">You need to submit your <a href="#!" class="text-decoration-none green">KYC and Other Documents</a> before proceed to the system.</p>
+                    <div class="buttons">
+                        <button class="black"><img src="./assets/img/submit.png" alt=""> Submit</button>
+                        <button class="closed"><img src="./assets/img/cross.png" alt=""> Later</button>
+                    </div>
+                </div>
+                <div class="breadcrumb2 pt-2 pb-2">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <a class="text-decoration-none text-dark pr-2 medium-weight d-flex" href="#!"><img class="pr-3" src="./assets/img/dashboard-icon.svg" alt=""> Dashboard </a>
+                        </li>
+                        <li>
+                            <img style="margin-top: 0px;" width="15px" src="./assets/img/right-arrow.png" alt="">
+                        </li>
+                        <li>
+                            <a class="text-decoration-none green pl-2 medium-weight " href="#!">My Account</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">..1.</div>
-                    <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">.2..</div>
+                    <div class="tab-pane fade  " id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+                        dashboard
+                    </div>
+                    <div class="tab-pane fade show active" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">
+                        <div class="main-head-content">
+                            <div class="left1">
+                                <h3 class="text-dark semi-bold-weight">My Account</h3>
+                            </div>
+                            <div class="right1">
+                                <p class="text-dark medium-weight">
+                                    Sort:
+                                </p>
+                                <select class="medium-weight">
+                                    <option value="">Get Started...</option>
+                                    <option value="1">Country 1</option>
+                                    <option value="2">Country 2</option>
+                                    <option value="3">Country 3</option>
+                                    <!-- Add more options as needed -->
+                                </select>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a class="active" data-toggle="tab" href="#real">Real</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Demo</a></li>
+                            <li><a class="pr-3" data-toggle="tab" href="#menu2">Archived</a></li>
+                        </ul>
+                        <div class="divider"></div>
+                        <div class="tab-content">
+                            <div id="real" class="tab-pane fade in active show">
+                                <img src="./assets/img/forgot-password.png" alt="">
+                                <div class="content">
+                                    <h4 class="pt-3 pb-2">You Don't have any real account</h4>
+                                    <button><span class="semi-bold-weight">+</span> Open New Account</button>
+                                </div>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <h3>Menu 1</h3>
+                                <p>Some content in menu 1.</p>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <h3>Menu 2</h3>
+                                <p>Some content in menu 2.</p>
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="tab-pane fade" id="v-pills-performance" role="tabpanel" aria-labelledby="v-pills-performance-tab">.3..</div>
                     <div class="tab-pane fade" id="v-pills-deposit" role="tabpanel" aria-labelledby="v-pills-deposit-tab">..4.</div>
                     <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">..5.</div>
@@ -96,6 +156,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
 </body>
@@ -115,6 +176,9 @@
             $('.right-side').toggleClass('active');
             $(".left-arrow").toggleClass("active");
         });
+        $('.closed').click(function() {
+            $('.breadcrumb').hide();
+        })
     });
 </script>
 
