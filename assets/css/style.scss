@@ -199,3 +199,73 @@
         }
     }
 }
+
+// Account 
+.dashboard-structure {
+    display: flex;
+    width: 100%;
+    position: relative;
+    .left-side {
+        position: absolute;
+        top: 0;
+        left: -300px;
+        /* initially hide the menu */
+        width: 300px;
+        transition: left 0.3s ease;
+        background-color: #f8f9fa;
+        padding: 100px 20px 20px 30px;
+        height: 100%;
+        .nav-link {
+            position: relative;
+            text-align: left;
+            margin: 5px 0;
+            font-size: 17px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0px;
+                height: 100%;
+                border-radius: 0px;
+                background: #000;
+                top: 0;
+                bottom: 0;
+                left: -30px;
+                margin: auto;
+                transition: 0.4s;
+            }
+            &:hover {
+                background-color: #000 !important;
+                color: #0CCC52 !important;
+                &::before {
+                    width: 6px;
+                }
+            }
+            img {
+                margin-right: 10px;
+            }
+        }
+        .nav-link.active {
+            background-color: #000 !important;
+            color: #0CCC52 !important;
+            &::before {
+                width: 6px;
+            }
+        }
+    }
+    .right-side {
+        width: calc(100% - 350px);
+        margin-left: auto;
+        min-height: 100vh;
+        background: #fff;
+        background-size: cover;
+        background-position: center;
+        transition: 0.4s;
+        padding: 20px;
+    }
+    .left-side.show {
+        left: 0;
+    }
+    .right-side.active {
+        width: 97% !important;
+    }
+}

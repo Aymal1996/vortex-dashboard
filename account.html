@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!-- Font Awsome 5 -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<!-- custom css -->
+<link rel="stylesheet" href="./assets/css/style.css">
+<!-- common css -->
+<link rel="stylesheet" href="./assets/css/common.css">
+<!-- responsive -->
+<link rel="stylesheet" href="./assets/css/responsive.css">
+
+
+<body>
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg1 pl-lg-5 pr-lg-5 pl-3 pr-3">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" width="150" height="auto" class="d-inline-block align-top" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link medium-weight pt-0" href="#">
+                            <img src="./assets/img/bell.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link medium-weight dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="./assets/img/user-icon.png" alt="">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">account</a>
+                            <a class="dropdown-item" href="#">deposit</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar End-->
+        <div class="dashboard-structure">
+
+            <div class="left-side show">
+                <div class="circle bg1">
+                    <button class="toggle-menu">
+                    <img class="left-arrow mr-0" src="./assets/img/arrow-left.png" style="margin-top:-5px" alt="">
+                </button>
+                </div>
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link medium-weight active" id="v-pills-dashboard-tab" data-toggle="pill" data-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="true"><img src="./assets/img/dashboard-icon.svg" alt="">Dashboard</button>
+                    <button class="nav-link medium-weight" id="v-pills-account-tab" data-toggle="pill" data-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-account" aria-selected="false"><img src="./assets/img/account.svg" alt="">My Account</button>
+                    <button class="nav-link medium-weight" id="v-pills-performance-tab" data-toggle="pill" data-target="#v-pills-performance" type="button" role="tab" aria-controls="v-pills-performance" aria-selected="false"><img src="./assets/img/performance_11743778 1.svg" alt="">Performance</button>
+                    <button class="nav-link medium-weight" id="v-pills-deposit-tab" data-toggle="pill" data-target="#v-pills-deposit" type="button" role="tab" aria-controls="v-pills-deposit" aria-selected="false"><img src="./assets/img/deposi.svg" alt="">Deposit</button>
+                    <button class="nav-link medium-weight" id="v-pills-history-tab" data-toggle="pill" data-target="#v-pills-history" type="button" role="tab" aria-controls="v-pills-history" aria-selected="false"><img src="./assets/img/deposit-history.svg" alt=""> History</button>
+                    <button class="nav-link medium-weight" id="v-pills-transfer-tab" data-toggle="pill" data-target="#v-pills-transfer" type="button" role="tab" aria-controls="v-pills-transfer" aria-selected="true"><img src="./assets/img/transfer.svg" alt="">Transfer</button>
+                    <button class="nav-link medium-weight" id="v-pills-withdraw-tab" data-toggle="pill" data-target="#v-pills-withdraw" type="button" role="tab" aria-controls="v-pills-withdraw" aria-selected="false"><img src="./assets/img/withdraw.svg" alt="">Withdraw</button>
+                    <button class="nav-link medium-weight" id="v-pills-withdraw-history-tab" data-toggle="pill" data-target="#v-pills-withdraw-history" type="button" role="tab" aria-controls="v-pills-withdraw-history" aria-selected="false"><img src="./assets/img/withdraw-history.svg" alt="">Withdrawal History</button>
+                    <button class="nav-link medium-weight" id="v-pills-referral-tab" data-toggle="pill" data-target="#v-pills-referral" type="button" role="tab" aria-controls="v-pills-referral" aria-selected="false"><img src="./assets/img/referal.svg" alt="">My Referral</button>
+                    <button class="nav-link medium-weight" id="v-pills-referral-bonus-tab" data-toggle="pill" data-target="#v-pills-referral-bonus" type="button" role="tab" aria-controls="v-pills-referral-bonus" aria-selected="true"><img src="./assets/img/referal-bonus.svg" alt="">Referral Bonus</button>
+                    <button class="nav-link medium-weight" id="v-pills-ticket-tab" data-toggle="pill" data-target="#v-pills-ticket" type="button" role="tab" aria-controls="v-pills-ticket" aria-selected="false"><img src="./assets/img/ticket.svg" alt="">Support Ticket</button>
+                    <button class="nav-link medium-weight" id="v-pills-profile-setting-tab" data-toggle="pill" data-target="#v-pills-profile-setting" type="button" role="tab" aria-controls="v-pills-profile-setting" aria-selected="false"><img src="./assets/img/setting.svg" alt="">Profile security</button>
+                    <button class="nav-link medium-weight" id="v-pills-security-tab" data-toggle="pill" data-target="#v-pills-security" type="button" role="tab" aria-controls="v-pills-security" aria-selected="false"><img src="./assets/img/security.svg" alt="">2FA Security</button>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="breadcrumb">
+                    Breadcrumb
+
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">..1.</div>
+                    <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-account-tab">.2..</div>
+                    <div class="tab-pane fade" id="v-pills-performance" role="tabpanel" aria-labelledby="v-pills-performance-tab">.3..</div>
+                    <div class="tab-pane fade" id="v-pills-deposit" role="tabpanel" aria-labelledby="v-pills-deposit-tab">..4.</div>
+                    <div class="tab-pane fade" id="v-pills-history" role="tabpanel" aria-labelledby="v-pills-history-tab">..5.</div>
+                    <div class="tab-pane fade " id="v-pills-transfer" role="tabpanel" aria-labelledby="v-pills-transfer-tab">.6..</div>
+                    <div class="tab-pane fade" id="v-pills-withdraw" role="tabpanel" aria-labelledby="v-pills-withdraw-tab">.7..</div>
+                    <div class="tab-pane fade" id="v-pills-withdraw-history" role="tabpanel" aria-labelledby="v-pills-withdraw-history-tab">..8.</div>
+                    <div class="tab-pane fade" id="v-pills-referral" role="tabpanel" aria-labelledby="v-pills-referral-tab">.9..</div>
+                    <div class="tab-pane fade " id="v-pills-referral-bonus" role="tabpanel" aria-labelledby="v-pills-referral-bonus-tab">.10..</div>
+                    <div class="tab-pane fade" id="v-pills-ticket" role="tabpanel" aria-labelledby="v-pills-ticket-tab">.11..</div>
+                    <div class="tab-pane fade" id="v-pills-profile-setting" role="tabpanel" aria-labelledby="v-pills-profile-setting-tab">.12..</div>
+                    <div class="tab-pane fade" id="v-pills-security" role="tabpanel" aria-labelledby="v-pills-security-tab">.13..</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(".toggle-menu").click(function() {
+            $(".left-side").toggleClass("show");
+            $('.right-side').toggleClass('active');
+            $(".left-arrow").toggleClass("active");
+        });
+    });
+</script>
+
+</html>
