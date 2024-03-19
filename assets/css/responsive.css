@@ -42,6 +42,41 @@
     .img img {
         width: 70%;
     }
+    .dashboard-structure .left-side .nav-link {
+        font-size: 15px;
+    }
+    .dashboard-structure .left-side {
+        padding: 100px 0px 20px 10px;
+    }
+    .dashboard-structure .left-side {
+        width: 250px;
+        left: -250px;
+    }
+    .dashboard-structure .right-side {
+        width: calc(100% - 290px);
+    }
+    .dashboard-structure .breadcrumb {
+        height: auto;
+    }
+    .dashboard-structure .breadcrumb .buttons {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 1199.5px) {
+    .dashboard-structure .left-side.show {
+        left: -250px;
+    }
+    .dashboard-structure .left-side {
+        width: 250px;
+        left: 0;
+    }
+    .dashboard-structure .right-side {
+        width: 96%;
+    }
+    .dashboard-structure .right-side.active {
+        width: calc(100% - 290px) !important;
+    }
 }
 
 @media only screen and (max-width: 991.5px) {
