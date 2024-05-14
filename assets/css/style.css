@@ -1,14 +1,22 @@
-.sign-in {
+.sign-in,
+.forgot-pass,
+.email-mess {
   height: 100vh;
   margin: auto 0;
 }
 
 .sign-in .container-fluid,
-.sign-in .row {
+.sign-in .row,
+.forgot-pass .container-fluid,
+.forgot-pass .row,
+.email-mess .container-fluid,
+.email-mess .row {
   height: 100%;
 }
 
-.sign-in .form-content {
+.sign-in .form-content,
+.forgot-pass .form-content,
+.email-mess .form-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,12 +31,16 @@
   padding: 0 450px 0 100px;
 }
 
-.sign-in .form-content h4 {
+.sign-in .form-content h4,
+.forgot-pass .form-content h4,
+.email-mess .form-content h4 {
   font-size: 2.2rem;
   font-weight: 600;
 }
 
-.sign-in .form-content .input-group-prepend .input-group-text::after {
+.sign-in .form-content .input-group-prepend .input-group-text::after,
+.forgot-pass .form-content .input-group-prepend .input-group-text::after,
+.email-mess .form-content .input-group-prepend .input-group-text::after {
   content: "";
   display: block;
   width: 1.5px;
@@ -41,39 +53,58 @@
   height: 18px;
 }
 
-.sign-in .form-content input {
+.sign-in .form-content input,
+.forgot-pass .form-content input,
+.email-mess .form-content input {
   border-radius: 10px;
 }
 
 .sign-in .form-content input[type="text"],
-.sign-in .form-content input[type="password"] {
+.sign-in .form-content input[type="password"],
+.sign-in .form-content input[type="email"],
+.forgot-pass .form-content input[type="text"],
+.forgot-pass .form-content input[type="password"],
+.forgot-pass .form-content input[type="email"],
+.email-mess .form-content input[type="text"],
+.email-mess .form-content input[type="password"],
+.email-mess .form-content input[type="email"] {
   height: 55px;
   width: 20% !important;
 }
 
-.sign-in .form-content .input-group-text {
+.sign-in .form-content .input-group-text,
+.forgot-pass .form-content .input-group-text,
+.email-mess .form-content .input-group-text {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   height: 60px;
   background-color: white !important;
 }
 
-.sign-in .form-content .form-control:focus {
+.sign-in .form-content .form-control:focus,
+.forgot-pass .form-content .form-control:focus,
+.email-mess .form-content .form-control:focus {
   border: 1px solid #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.sign-in .form-content p {
+.sign-in .form-content p,
+.forgot-pass .form-content p,
+.email-mess .form-content p {
   color: #000;
 }
 
-.sign-in .form-content i {
+.sign-in .form-content i,
+.forgot-pass .form-content i,
+.email-mess .form-content i {
   color: #0CCC52;
   margin-top: -4px;
 }
 
-.sign-in .form-content .remember-forgot {
+.sign-in .form-content .remember-forgot,
+.forgot-pass .form-content .remember-forgot,
+.email-mess .form-content .remember-forgot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,7 +119,9 @@
   font-weight: 700;
 }
 
-.sign-in .form-content .remember-forgot .forgot a {
+.sign-in .form-content .remember-forgot .forgot a,
+.forgot-pass .form-content .remember-forgot .forgot a,
+.email-mess .form-content .remember-forgot .forgot a {
   font-size: 15px;
   color: #000000;
   text-decoration: none;
@@ -96,63 +129,65 @@
   position: relative;
 }
 
-.sign-in .form-content .remember-forgot .forgot a:hover {
+.sign-in .form-content .remember-forgot .forgot a:hover,
+.forgot-pass .form-content .remember-forgot .forgot a:hover,
+.email-mess .form-content .remember-forgot .forgot a:hover {
   color: #000 !important;
 }
 
-.sign-in .form-content .logo {
+.sign-in .form-content .logo,
+.forgot-pass .form-content .logo,
+.email-mess .form-content .logo {
   width: 150px;
   text-align: left;
   margin-bottom: 50px;
 }
 
-.sign-in .form-content a.btn {
+.sign-in .form-content a.btn,
+.forgot-pass .form-content a.btn,
+.email-mess .form-content a.btn {
   font-size: 17px;
   z-index: 2;
 }
 
-.sign-in .form-content a.btn:focus {
+.sign-in .form-content a.btn:focus,
+.forgot-pass .form-content a.btn:focus,
+.email-mess .form-content a.btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.sign-in .form-content .span1 {
+.sign-in .form-content .span1,
+.forgot-pass .form-content .span1,
+.email-mess .form-content .span1 {
   font-size: 18px;
   margin-top: 20px;
   z-index: 2;
 }
 
-.sign-in .form-content .span1 a {
+.sign-in .form-content .span1 a,
+.forgot-pass .form-content .span1 a,
+.email-mess .form-content .span1 a {
   color: #0070FF;
 }
 
-.sign-in .form-content .span1 a:hover {
+.sign-in .form-content .span1 a:hover,
+.forgot-pass .form-content .span1 a:hover,
+.email-mess .form-content .span1 a:hover {
   color: #0070FF !important;
 }
 
-.register,
-.forgot-pass,
-.verify-email,
-.create-new-pass {
+.register {
   height: 100vh;
   margin: auto 0;
 }
 
 .register .container-fluid,
-.register .row,
-.forgot-pass .container-fluid,
-.forgot-pass .row,
-.verify-email .container-fluid,
-.verify-email .row,
-.create-new-pass .container-fluid,
-.create-new-pass .row {
+.register .row {
   height: 100%;
 }
 
-.register .form-content,
-.forgot-pass .form-content,
-.verify-email .form-content,
-.create-new-pass .form-content {
+.register .form-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,13 +198,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 250px;
+  text-align: left;
+  padding: 0 450px 0 100px;
 }
 
-.register .form-content .input-group-prepend .input-group-text::after,
-.forgot-pass .form-content .input-group-prepend .input-group-text::after,
-.verify-email .form-content .input-group-prepend .input-group-text::after,
-.create-new-pass .form-content .input-group-prepend .input-group-text::after {
+.register .form-content h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.register .form-content .input-group-prepend .input-group-text::after {
   content: "";
   display: block;
   width: 1.5px;
@@ -182,97 +220,41 @@
   height: 18px;
 }
 
-.register .form-content input,
-.forgot-pass .form-content input,
-.verify-email .form-content input,
-.create-new-pass .form-content input {
-  border-radius: 100px;
+.register .form-content input {
+  border-radius: 10px;
 }
 
 .register .form-content input[type="text"],
 .register .form-content input[type="password"],
 .register .form-content input[type="email"],
-.register .form-content input[type="tel"],
-.register .form-content select,
-.forgot-pass .form-content input[type="text"],
-.forgot-pass .form-content input[type="password"],
-.forgot-pass .form-content input[type="email"],
-.forgot-pass .form-content input[type="tel"],
-.forgot-pass .form-content select,
-.verify-email .form-content input[type="text"],
-.verify-email .form-content input[type="password"],
-.verify-email .form-content input[type="email"],
-.verify-email .form-content input[type="tel"],
-.verify-email .form-content select,
-.create-new-pass .form-content input[type="text"],
-.create-new-pass .form-content input[type="password"],
-.create-new-pass .form-content input[type="email"],
-.create-new-pass .form-content input[type="tel"],
-.create-new-pass .form-content select {
-  height: 50px;
+.register .form-content input[type="tel"] {
+  height: 55px;
+  width: 20% !important;
 }
 
-.register .form-content select,
-.forgot-pass .form-content select,
-.verify-email .form-content select,
-.create-new-pass .form-content select {
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  /* Remove default appearance */
-  -webkit-appearance: none;
-  /* Safari and Chrome */
-  -moz-appearance: none;
-  /* Firefox */
-  appearance: none;
-  /* Standard */
-  /* Add custom styles */
-  padding-right: 25px;
-  /* Space for custom arrow */
-  background-image: url("../img/dropdown.png");
-  /* Replace 'path/to/arrow-icon.png' with your arrow icon */
-  background-repeat: no-repeat;
-  background-position: 95%;
-  /* Position the arrow on the right side */
-}
-
-.register .form-content .input-group-text,
-.forgot-pass .form-content .input-group-text,
-.verify-email .form-content .input-group-text,
-.create-new-pass .form-content .input-group-text {
+.register .form-content .input-group-text {
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
   height: 60px;
   background-color: white !important;
 }
 
-.register .form-content .form-control:focus,
-.forgot-pass .form-content .form-control:focus,
-.verify-email .form-content .form-control:focus,
-.create-new-pass .form-content .form-control:focus {
-  border: 1px solid #000;
+.register .form-content .form-control:focus {
+  border: 1px solid #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.register .form-content p,
-.forgot-pass .form-content p,
-.verify-email .form-content p,
-.create-new-pass .form-content p {
+.register .form-content p {
   color: #000;
 }
 
-.register .form-content i,
-.forgot-pass .form-content i,
-.verify-email .form-content i,
-.create-new-pass .form-content i {
+.register .form-content i {
   color: #0CCC52;
   margin-top: -4px;
 }
 
-.register .form-content .remember-forgot,
-.forgot-pass .form-content .remember-forgot,
-.verify-email .form-content .remember-forgot,
-.create-new-pass .form-content .remember-forgot {
+.register .form-content .remember-forgot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,298 +264,65 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
+  color: #000;
+  font-weight: 700;
+  padding: 15px 0;
 }
 
-.register .form-content .remember-forgot .forgot a,
-.forgot-pass .form-content .remember-forgot .forgot a,
-.verify-email .form-content .remember-forgot .forgot a,
-.create-new-pass .form-content .remember-forgot .forgot a {
+.register .form-content .remember-forgot .forgot a {
   font-size: 15px;
   color: #000000;
   text-decoration: none;
+  z-index: 2;
+  position: relative;
 }
 
-.register .form-content .logo,
-.forgot-pass .form-content .logo,
-.verify-email .form-content .logo,
-.create-new-pass .form-content .logo {
-  width: 250px;
-  text-align: center;
-  margin: 0 auto;
+.register .form-content .remember-forgot .forgot a:hover {
+  color: #000 !important;
 }
 
-.register .form-content a.btn,
-.forgot-pass .form-content a.btn,
-.verify-email .form-content a.btn,
-.create-new-pass .form-content a.btn {
-  font-size: 19px;
+.register .form-content .logo {
+  width: 150px;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
-.register .form-content a.btn:focus,
-.forgot-pass .form-content a.btn:focus,
-.verify-email .form-content a.btn:focus,
-.create-new-pass .form-content a.btn:focus {
+.register .form-content a.btn {
+  font-size: 17px;
+  z-index: 2;
+}
+
+.register .form-content a.btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.register .form-content .span1,
-.forgot-pass .form-content .span1,
-.verify-email .form-content .span1,
-.create-new-pass .form-content .span1 {
-  font-size: 24px;
+.register .form-content .span1 {
+  font-size: 18px;
   margin-top: 20px;
+  z-index: 2;
 }
 
-.register .form-content .span1 a,
-.forgot-pass .form-content .span1 a,
-.verify-email .form-content .span1 a,
-.create-new-pass .form-content .span1 a {
-  color: #000;
+.register .form-content .span1 a {
+  color: #0070FF;
 }
 
-.register .six-input,
-.forgot-pass .six-input,
-.verify-email .six-input,
-.create-new-pass .six-input {
-  margin-top: 30px;
+.register .form-content .span1 a:hover {
+  color: #0070FF !important;
 }
 
-.register .six-input .six-input-field,
-.forgot-pass .six-input .six-input-field,
-.verify-email .six-input .six-input-field,
-.create-new-pass .six-input .six-input-field {
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 15px !important;
-  padding-left: 5px !important;
-  border: 1px solid #000000 !important;
+.verify-email {
+  height: 100vh;
+  margin: auto 0;
 }
 
-.dashboard-structure {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-
-.dashboard-structure #v-pills-tabContent {
-  background-color: #F5F4F7;
-  height: auto;
-  padding: 40px 20px 10px;
-  border-radius: 10px;
-}
-
-.dashboard-structure .left-side {
-  position: absolute;
-  top: 0;
-  left: -300px;
-  /* initially hide the menu */
-  width: 300px;
-  -webkit-transition: left 0.3s ease;
-  transition: left 0.3s ease;
-  background-color: #f8f9fa;
-  padding: 100px 20px 20px 30px;
+.verify-email .container-fluid,
+.verify-email .row {
   height: 100%;
 }
 
-.dashboard-structure .left-side .nav-link {
-  position: relative;
-  text-align: left;
-  margin: 5px 0;
-  font-size: 17px;
-  font-weight: 600;
-}
-
-.dashboard-structure .left-side .nav-link::before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 100%;
-  border-radius: 0px;
-  background: #000;
-  top: 0;
-  bottom: 0;
-  left: -30px;
-  margin: auto;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.dashboard-structure .left-side .nav-link:hover {
-  background-color: #000 !important;
-  color: #0CCC52 !important;
-}
-
-.dashboard-structure .left-side .nav-link:hover::before {
-  width: 6px;
-}
-
-.dashboard-structure .left-side .nav-link img {
-  margin-right: 15px;
-}
-
-.dashboard-structure .left-side .nav-link.active {
-  background-color: #000 !important;
-  color: #0CCC52 !important;
-}
-
-.dashboard-structure .left-side .nav-link.active::before {
-  width: 6px;
-}
-
-.dashboard-structure .right-side {
-  width: calc(100% - 350px);
-  margin-left: auto;
-  min-height: 100vh;
-  background: #fff;
-  background-size: cover;
-  background-position: center;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  padding: 20px;
-}
-
-.dashboard-structure .left-side.show {
-  left: 0;
-}
-
-.dashboard-structure .right-side.active {
-  width: 97% !important;
-}
-
-.dashboard-structure .breadcrumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 70px;
-}
-
-.dashboard-structure .breadcrumb p {
-  color: #606060;
-  margin: 0;
-}
-
-.dashboard-structure .breadcrumb .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-}
-
-.dashboard-structure .breadcrumb .buttons button {
-  width: 150px;
-}
-
-.dashboard-structure .breadcrumb .buttons .black {
-  background-color: #0CCC52;
-  color: #000;
-  border: none;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-}
-
-.dashboard-structure .breadcrumb .buttons .closed {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-}
-
-.dashboard-structure #v-pills-account {
-  height: 100%;
-}
-
-.dashboard-structure #v-pills-account .main-head-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.dashboard-structure #v-pills-account .main-head-content .right1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.dashboard-structure #v-pills-account .main-head-content .right1 select {
-  background-color: transparent;
-  border: 1.5px solid #000;
-  border-radius: 100px;
-  padding: 6px 10px;
-}
-
-.dashboard-structure #v-pills-account .main-head-content .right1 p {
-  font-size: 20px;
-  margin: 0;
-}
-
-.dashboard-structure #v-pills-account .nav-tabs {
-  text-align: center;
-  padding-top: 30px;
-  border-bottom: none;
-}
-
-.dashboard-structure #v-pills-account .nav-tabs li a {
-  color: #000;
-  padding: 5px 30px;
-  font-size: 19px;
-  text-decoration: none;
-  border-bottom: 3px solid black;
-  border-radius: 2px;
-}
-
-.dashboard-structure #v-pills-account .nav-tabs li a.active {
-  color: #0CCC52;
-  border-bottom: 3px solid #0CCC52;
-}
-
-.dashboard-structure #v-pills-account #real {
+.verify-email .form-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,28 +333,145 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: left;
+  padding: 0 450px 0 100px;
+}
+
+.verify-email .form-content h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.verify-email .form-content .input-group-prepend .input-group-text::after {
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: calc(100% - 8px);
+  /* Adjust the height as needed */
+  background-color: #000;
+  /* Adjust the color as needed */
+  margin: 3px 0 3px 10px;
+  /* Adjust the margin to center the line vertically */
+  height: 18px;
+}
+
+.verify-email .form-content input {
+  border-radius: 10px;
+}
+
+.verify-email .form-content input[type="text"],
+.verify-email .form-content input[type="password"],
+.verify-email .form-content input[type="email"],
+.verify-email .form-content input[type="tel"] {
+  height: 55px;
+  width: 20% !important;
+}
+
+.verify-email .form-content .input-group-text {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  height: 60px;
+  background-color: white !important;
+}
+
+.verify-email .form-content .form-control:focus {
+  border: 1px solid #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.verify-email .form-content p {
+  color: #000;
+}
+
+.verify-email .form-content i {
+  color: #0CCC52;
+  margin-top: -4px;
+}
+
+.verify-email .form-content .remember-forgot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  text-align: center;
-  padding-top: 150px;
+  z-index: 2;
+  color: #000;
+  font-weight: 700;
+  padding: 15px 0;
 }
 
-.dashboard-structure #v-pills-account #real img {
-  width: 25%;
+.verify-email .form-content .remember-forgot .forgot a {
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
 }
 
-.dashboard-structure #v-pills-account #real button {
-  border: none;
-  font-weight: 600;
+.verify-email .form-content .remember-forgot .forgot a:hover {
+  color: #000 !important;
+}
+
+.verify-email .form-content .logo {
+  width: 150px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.verify-email .form-content a.btn {
+  font-size: 17px;
+  z-index: 2;
+}
+
+.verify-email .form-content a.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.verify-email .form-content .span1 {
   font-size: 18px;
-  height: 50px;
-  width: 80%;
-  margin: 10px auto;
+  margin-top: 20px;
+  z-index: 2;
 }
 
-.dashboard-structure #v-pills-account #real button span {
-  font-size: 25px;
+.verify-email .form-content .span1 a {
+  color: #0070FF;
+}
+
+.verify-email .form-content .span1 a:hover {
+  color: #0070FF !important;
+}
+
+.verify-email .six-input {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.verify-email .six-input input {
+  width: 30px !important;
+  height: 50px !important;
+  border: none !important;
+}
+
+.verify-email .six-input .dash {
+  font-size: 50px;
+}
+
+.verify-email .empty-field {
+  border-color: red !important;
 }
 /*# sourceMappingURL=style.css.map */

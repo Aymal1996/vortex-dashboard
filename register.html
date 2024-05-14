@@ -19,88 +19,76 @@
 
 <body>
     <section class="register">
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center text-center">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="img">
-                        <img src="./assets/img/register.png" alt="">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters justify-content-center align-items-center text-center">
+                <div class="col-lg-5 col-md-5 col-sm-12 h-100">
+                    <div class="img h-100" style="background-image: url('./assets/img/bg4.svg');background-position: center;background-size: cover;">
+                        <!-- <img src="./assets/img/bg2.png" alt=""> -->
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 bg1 h-100">
+                <div class="col-lg-7 col-md-7 col-sm-12 h-100 bg1 overflow-hidden">
                     <form action="" class=" h-100">
-                        <div class="form-content h-100">
-                            <img class="logo" src="./assets/img/logo.png" alt="">
-                            <h2 class="medium-weight mt-5 green">Register Account</h2>
+                        <div class="form-content h-100 position-relative">
+                            <div class="bg-overlay-green"></div>
+                            <img class="logo" src="./assets/img/Logo-2.png" alt="">
+                            <h4 class="medium-weight mt-5">Register Account</h4>
                             <p class="light-weight">Get your free Vortex Fx Account Now.</p>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i>
-                                        <img src="./assets/img/user.png" alt="">
-                                    </i></span>
+                            <div class="row mt-4" style="height: auto;">
+                                <div class="col-md-6 p-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
                                 </div>
-                                <input type="text" class="form-control" placeholder="User Name">
-                            </div>
-                            <div class="input-group mt-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i>
-                                        <img src="./assets/img/email.png" alt="">
-                                    </i></span>
+                                <div class="col-md-6 p-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
                                 </div>
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="input-group mt-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i><img src="./assets/img/globe.png" alt=""></i></span>
+                                <div class="col-md-6 p-3">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
                                 </div>
-                                <select class="form-control">
-                                  <option value="">Select Country</option>
-                                  <option value="1">Country 1</option>
-                                  <option value="2">Country 2</option>
-                                  <option value="3">Country 3</option>
-                                  <!-- Add more options as needed -->
-                                </select>
-                            </div>
-                            <div class="input-group mt-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i>
-                                        <img src="./assets/img/user.png" alt="">
-                                    </i></span>
+                                <div class="col-md-6 p-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Username">
+                                    </div>
                                 </div>
-                                <input type="text" class="form-control" placeholder="User Name">
-                            </div>
-                            <div class="input-group mt-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i>
-                                        <img src="./assets/img/phone.png" alt="">
-                                    </i></span>
+                                <div class="col-md-6 p-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Country">
+                                    </div>
                                 </div>
-                                <input type="tel" class="form-control" pattern="[0-9]{10}" placeholder="Enter Mobile number">
-                            </div>
-                            <div class="input-group mt-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="">
-                                        <img src="./assets/img/passowrd.png" alt="">
-                                    </i></span>
+                                <div class="col-md-6 p-3">
+                                    <div class="input-group">
+                                        <input type="tel" class="form-control" placeholder="Number">
+                                    </div>
                                 </div>
-                                <input type="password" class="form-control" placeholder="Enter Password">
-                            </div>
-                            <div class="input-group mt-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="">
-                                        <img src="./assets/img/passowrd.png" alt="">
-                                    </i></span>
+                                <div class="col-md-12 p-3">
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
                                 </div>
-                                <input type="password" class="form-control" placeholder="Enter Confirm Password">
+                                <div class="col-md-12 p-3">
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" placeholder="Confirm password">
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="remember-forgot mt-2">
-                                <div class="d-flex justify-content-between">
+                                <!-- <div class="d-flex justify-content-between">
                                     <input type="radio" id="remember-me" aria-label="Radio button for following text input">
                                     <label class="pl-3 pt-2 extra-light-weight text-left" for="remember-me">I agree with <span class="semi-bold-weight">Terms of Use , Terms Of Service , Privacy Policy</span> </label>
+                                </div> -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                    <label class="form-check-label regular-weight" for="flexCheckDefault">I agree with <span class="semi-bold-weight">Terms of Use , Terms Of Service , Privacy Policy</span> </label>
                                 </div>
                             </div>
                             <a href="#!" class="btn semi-bold-weight mt-3">Register</a>
                             <span class="span1">
-                                Already have an Account ?<a href="#!" class="semi-bold-weight">  Login</a> 
+                                Already have an Account ?<a href="#!" class="medium-weight"> Login Now</a> 
                             </span>
                         </div>
                     </form>
