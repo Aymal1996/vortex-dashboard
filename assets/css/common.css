@@ -170,3 +170,15 @@ a:hover {
     top: 0;
     /* border-radius: 100%; */
 }
+
+.empty-field {
+    border: 1px solid red !important;
+}
+
+.verify-email .six-input .empty-field {
+    border: 1px solid red !important;
+}
+
+.error-message {
+    color: red !important;
+}

@@ -44,6 +44,8 @@ $(document).ready(function () {
     console.log('click');
     var allFieldsFilled = true;
 
+    $(".error-message").remove(); // Remove any existing error messages
+
     $(".six-input-field").each(function() {
         var six_field = $(this).val().trim();
         console.log('six_field ');
@@ -60,9 +62,10 @@ $(document).ready(function () {
     });
 
     if (!allFieldsFilled) {
-        alert("Please fill in all fields."); // Show a message if any field is empty
+        $('.six-input').after(`<div class="error-message">Verification code didn't match!</div>`); // Show a message if any field is empty
     }
 });
+
 
 
 })
